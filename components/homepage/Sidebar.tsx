@@ -22,7 +22,7 @@ interface NavInfoType {
 }
 
 interface LinkType {
-  readonly isActive: boolean;
+  $isActive: boolean;
 }
 
 const Sidebar = () => {
@@ -53,7 +53,7 @@ const Sidebar = () => {
             <DashboardLink
               href={item.link}
               key={index}
-              isActive={pathname === item.link}
+              $isActive={pathname === item.link}
             >
               {item.icon}
             </DashboardLink>
@@ -82,24 +82,21 @@ const Aside = styled.aside`
   padding-top: 27px;
   padding-bottom: 40px;
 `;
-
 const Container = styled.section`
   width: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
-
 const DashboardLink = styled(Link)<LinkType>`
-  background: ${({ isActive }) => isActive && "#D4F7F2"};
+  background: ${({ $isActive }) => $isActive && "#D4F7F2"};
   display: flex;
   justify-content: center;
   align-items: center;
-  height: ${({ isActive }) => isActive && "48px"};
-  width: ${({ isActive }) => isActive && "48px"};
+  height: ${({ $isActive }) => $isActive && "48px"};
+  width: ${({ $isActive }) => $isActive && "48px"};
   border-radius: 4px;
 `;
-
 const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -107,7 +104,6 @@ const LinkContainer = styled.div`
   gap: 25px;
   margin-top: 108px;
 `;
-
 const BottomContainer = styled.div`
   margin-top: auto;
   gap: 10px;

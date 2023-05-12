@@ -37,6 +37,7 @@ export const lightTheme = {
   secondaryText: "#72777B",
   navIconBg: "#D4F7F2",
   borderColor: "#E7EAEE",
+  inputBg: "#FFFFFF",
 };
 export const darkTheme = {
   background: "#001A33",
@@ -45,4 +46,5 @@ export const darkTheme = {
   secondaryText: "#B8C0CC",
   navIconBg: "#243B53",
   borderColor: "#334E68",
+  inputBg: "#243B53",
 };

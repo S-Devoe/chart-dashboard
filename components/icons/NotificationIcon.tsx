@@ -41,8 +41,8 @@ function NotificationIcon(props: SvgProps) {
           y2="6.03049"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00C0F4" />
-          <stop offset="1" stop-color="#12ECA0" />
+          <stop stopColor="#00C0F4" />
+          <stop offset="1" stopColor="#12ECA0" />
         </linearGradient>
       </defs>
     </svg>

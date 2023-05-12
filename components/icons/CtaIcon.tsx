@@ -31,7 +31,7 @@ function CtaIcon(props: SvgProps) {
         <path
           d="M20 20H28"
           stroke="white"
-          stroke-width="2"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
@@ -80,8 +80,8 @@ function CtaIcon(props: SvgProps) {
           y2="0.119998"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00A1CC" />
-          <stop offset="1" stop-color="#0EBE81" />
+          <stop stopColor="#00A1CC" />
+          <stop offset="1" stopColor="#0EBE81" />
         </linearGradient>
       </defs>
     </svg>

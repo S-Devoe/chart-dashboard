@@ -12,7 +12,7 @@ function SettingsIcon(props: SvgProps) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_42_12223)">
+      <g clipPath="url(#clip0_42_12223)">
         <path
           d="M24 23C25.6569 23 27 21.6569 27 20C27 18.3431 25.6569 17 24 17C22.3431 17 21 18.3431 21 20C21 21.6569 22.3431 23 24 23Z"
           stroke="#004A3F"

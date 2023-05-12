@@ -31,7 +31,9 @@ const Body = styled.body`
   display: flex;
   flex-direction: row;
   gap: 40px;
- 
+  width: 100%;
 `;
 
-const Main = styled.main``;
+const Main = styled.main`
+  width: 100%;
+`;

@@ -3,5 +3,5 @@ export interface SvgProps {
   height?: string | number;
   stroke?: string;
   strokeWidth?: string;
-  fill?: string
+  fill?: string;
 }
