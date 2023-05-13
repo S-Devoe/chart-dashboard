@@ -1,11 +1,13 @@
 import { styled } from "styled-components";
 import SearchIcon from "../icons/SearchIcon";
 import HelpIcon from "../icons/HelpIcon";
+import useDarkMode from "@/context/DarkModeContext";
 
 const Header = () => {
   const date: Date = new Date();
 
-  console.log(date);
+  const { toggleDarkMode, isDark } = useDarkMode();
+  console.log(isDark);
 
   return (
     <HeaderContainer>
@@ -23,7 +25,7 @@ const Header = () => {
             placeholder="Search"
           />
         </InputContainer>
-        <IconContainer>
+        <IconContainer onClick={() => toggleDarkMode()}>
           <HelpIcon />
         </IconContainer>
       </SearchContent>
@@ -77,11 +79,12 @@ const Input = styled.input`
   background: none;
   font-family: "Lato", san-serif;
 `;
-const IconContainer = styled.div`
+const IconContainer = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
   background: ${({ theme }) => theme.inputBg};
   width: 48px;
   height: 48px;
+  border-radius: 1000px;
 `;

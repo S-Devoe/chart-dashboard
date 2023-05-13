@@ -38,6 +38,11 @@ export const lightTheme = {
   navIconBg: "#D4F7F2",
   borderColor: "#E7EAEE",
   inputBg: "#FFFFFF",
+  greenPercentText: "#005E36",
+  redPercentText: "#5E0000",
+  gainBg: "#ECFDF5",
+  loseBg: "#FFEAEA",
+  cardBg: "#fff",
 };
 export const darkTheme = {
   background: "#001A33",
@@ -45,6 +50,11 @@ export const darkTheme = {
   primaryText: "#fff",
   secondaryText: "#B8C0CC",
   navIconBg: "#243B53",
-  borderColor: "#334E68",
+  borderColor: "none",
   inputBg: "#243B53",
+  greenPercentText: "#0BFF96",
+  redPercentText: "#FFF4F4",
+  gainBg: "#0F3E28",
+  loseBg: "#823030",
+  cardBg: "#102A43",
 };

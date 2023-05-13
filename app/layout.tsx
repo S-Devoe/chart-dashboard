@@ -3,6 +3,7 @@ import Sidebar from "@/components/homepage/Sidebar";
 import "./globals.css";
 import Providers from "@/context/Providers";
 import { styled } from "styled-components";
+import { DarkModeProvider } from "@/context/DarkModeContext";
 
 export const metadata = {
   title: "Dashboard",
@@ -16,12 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Providers>
-        <Body>
-          <Sidebar />
-          <Main>{children} </Main>
-        </Body>
-      </Providers>
+      <Body>
+        <DarkModeProvider>
+          <Providers>
+            <Sidebar />
+            <Main>{children} </Main>
+          </Providers>
+        </DarkModeProvider>
+      </Body>
     </html>
   );
 }

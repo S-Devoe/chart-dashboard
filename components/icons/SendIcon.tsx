@@ -12,17 +12,17 @@ function SendIcon(props: SvgProps) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_42_12302)">
+      <g clipPath="url(#clip0_42_12302)">
         <path
           d="M14.6673 1.3335L7.33398 8.66683"
-          stroke={props.stroke || "#7A4605" }
+          stroke={props.stroke || "#7A4605"}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M14.6673 1.3335L10.0007 14.6668L7.33398 8.66683L1.33398 6.00016L14.6673 1.3335Z"
-          stroke={props.stroke || "#7A4605" }
+          stroke={props.stroke || "#7A4605"}
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
